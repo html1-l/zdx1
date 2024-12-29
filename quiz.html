@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>试题库 - 网络信息安全平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="js/auth.js"></script>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2716/2716652.png" alt="网络信息安全" class="logo-img">
+                <span class="logo-text">网络信息安全</span>
+            </div>
+            <ul>
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="course.html" class="nav-link">课程内容</a></li>
+                <li><a href="videos.html" class="nav-link">教学视频</a></li>
+                <li><a href="quiz.html" class="nav-link active">在线测试</a></li>
+                <li><a href="#" onclick="logout()">退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="quiz">
+            <h2>试题库</h2>
+            <div class="watermark"></div>
+            <div class="quiz-container">
+                <div class="quiz-list">
+                    <div class="quiz-item">
+                        <h3>第一章：网络安全概述</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                    <div class="quiz-item">
+                        <h3>第二章：黑客原理与防范措施</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                    <div class="quiz-item">
+                        <h3>第三章：网络病毒防治</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                    <div class="quiz-item">
+                        <h3>第四章：密码技术</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                    <div class="quiz-item">
+                        <h3>第五章：防火墙技术</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                    <div class="quiz-item">
+                        <h3>第六章：Windows的安全与保护机制</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                    <div class="quiz-item">
+                        <h3>第七章：Web应用安全</h3>
+                        <div class="quiz-info">
+                            <span><i class="fas fa-clock"></i> 测试时间：2小时</span>
+                            <span><i class="fas fa-star"></i> 总分：100分</span>
+                        </div>
+                        <button class="start-quiz">开始测试</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 网络信息安全平台</p>
+    </footer>
+
+    <div id="quiz-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="quiz-title">测试题目</h2>
+                <div class="quiz-stats">
+                    <span id="time-remaining"><i class="fas fa-clock"></i> 剩余时间: 2:00:00</span>
+                    <span>总分: 100分</span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div id="question-container">
+                    <!-- 题目将通过JavaScript动态添加 -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="submit-quiz" class="quiz-nav-btn submit-btn">提交试卷</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/quiz-data.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+</html> 

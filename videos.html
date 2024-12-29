@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频 - 网络信息安全平台</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // 添加调试信息
+        function handleVideoError(e) {
+            console.error('Video error:', e);
+            const video = e.target;
+            console.log('Video source:', video.querySelector('source').src);
+        }
+    </script>
+    <script src="js/auth.js"></script>
+    <script src="js/videos.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/2716/2716652.png" alt="网络信息安全" class="logo-img">
+                <span class="logo-text">网络信息安全</span>
+            </div>
+            <ul>
+                <li><a href="index.html" class="nav-link">首页</a></li>
+                <li><a href="course.html" class="nav-link">课程内容</a></li>
+                <li><a href="videos.html" class="nav-link active">教学视频</a></li>
+                <li><a href="quiz.html" class="nav-link">在线测试</a></li>
+                <li><a href="#" onclick="logout()">退出</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="videos">
+            <h1>在线视频</h1>
+            <div class="watermark">
+                <img src="https://cdn-icons-png.flaticon.com/512/2716/2716652.png" alt="安全水印">
+            </div>
+            <p class="section-description">本章节包含了网络安全相关的教学视频，按章节顺序排列</p>
+            <div class="video-grid">
+                <!-- 第一章 -->
+                <div class="video-item">
+                    <h3>第一章：网络安全概述</h3>
+                    <h4>1.1 网络安全基础</h4>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第一章.网络安全概述.MP4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+
+                <!-- 第二章 -->
+                <div class="video-item">
+                    <h3>第二章：黑客原理与防范措施</h3>
+                    <h4>2.1 黑客攻击原理</h4>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第二章-1.mp4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                    <h4>2.2 X扫描</h4>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第二章-2.MP4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+                
+                <!-- 第三章 -->
+                <div class="video-item">
+                    <h3>第三章：防护措施</h3>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第三章.mp4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+
+                <!-- 第四章 -->
+                <div class="video-item">
+                    <h3>第四章：网络攻防实战</h3>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第四章.mp4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+
+                <!-- 第五章 -->
+                <div class="video-item">
+                    <h3>第五章：安全工具使用</h3>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第五章.mp4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+
+                <!-- 第六章 -->
+                <div class="video-item">
+                    <h3>第六章：注册表</h3>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第6章.MP4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                    <h4>6.1 注册表基础</h4>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第六章-1.MP4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+
+                <!-- 第七章 -->
+                <div class="video-item">
+                    <h3>第七章：综合实践</h3>
+                    <video controls onError="handleVideoError(event)" width="100%">
+                        <source src="videos/第七章.mp4" type="video/mp4">
+                        您的浏览器不支持 HTML5 视频播放
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 网络信息安全平台</p>
+    </footer>
+
+   
+</body>
+</html> 
